@@ -50,7 +50,6 @@ function ProjectCard({ project }: ProjectCardProps) {
 
     return (
         <div className="w-9/10 place-self-center bg-accent mt-20">
-            {/* Top: Project header with icon */}
             <div className="flex flex-row gap-4 w-fit p-2 border-foreground border-t-2 border-l-4">
                 <div className="content-center">
                     <div
@@ -68,10 +67,9 @@ function ProjectCard({ project }: ProjectCardProps) {
             </div>
             <div className="px-4">{project.description}</div>
 
-            {/* Bottom: Carousel + Repo link */}
-            <div className="bg-transparent border-foreground border-b-2 border-r-4 flex flex-row">
+            <div className="bg-transparent border-foreground border-b-2 border-r-4 flex flex-col lg:flex-row">
                 {/* Images */}
-                <div className="w-8/10 p-8">
+                <div className="w-full p-2 lg:w-8/10 lg:p-8">
                     <Slider {...{ ...settings, infinite: project.images.length > 1 }}>
                         {project.images.map((src: string, index: number) => (
                             <div key={`${project.name}-img-${index}`}>
@@ -87,8 +85,7 @@ function ProjectCard({ project }: ProjectCardProps) {
                     </Slider>
                 </div>
 
-                {/* GitHub Link */}
-                <div className="w-2/10 p-8">
+                <div className="ml-auto w-40 p-6 lg:w-50 lg:p-8">
                     <div className="mx-auto">
                         <a
                             className="text-center text-xl flex flex-col gap-2 underline p-2 border-foreground border-b-1 border-r-3 hover:border-r-12 hover:border-b-6 transition-all duration-300"

@@ -85,7 +85,7 @@ function ProjectCard({ project }: ProjectCardProps) {
                     </Slider>
                 </div>
 
-                <div className="ml-auto w-40 p-6 lg:w-50 lg:p-8">
+                <div className="ml-auto w-40 h-40 p-6 lg:w-50 lg:h-50 lg:p-8">
                     <div className="mx-auto">
                         <a
                             className="text-center text-xl flex flex-col gap-2 underline p-2 border-foreground border-b-1 border-r-3 hover:border-r-12 hover:border-b-6 transition-all duration-300"
@@ -93,9 +93,9 @@ function ProjectCard({ project }: ProjectCardProps) {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Link to repository
+                            Link to repo
                             <img
-                                className="w-fit h-fit"
+                                className="w-fit"
                                 src={githubLogo}
                                 alt="Link to github repository"
                             />

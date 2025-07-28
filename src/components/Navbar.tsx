@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link, scrollSpy } from "react-scroll";
-
 const navLinks = [
     { to: "Home", label: "Home" },
     { to: "About", label: "About" },
@@ -24,7 +23,7 @@ function Navbar() {
     return (
         <nav
             className={`
-              justify-center h-16 p-4 bg-secondary bg-[url('./src/assets/stripe-texture.png')] bg-repeat bg-[x: unset] bg-[length:100px] text-foreground flex sticky top-0 z-50 animate-scroll-bg animate-scroll-bg:hover
+              justify-center h-16 p-4 bg-secondary bg-[url(/stripe-texture.png))] bg-repeat bg-[x: unset] bg-[length:100px] text-foreground flex sticky top-0 z-50 animate-scroll-bg animate-scroll-bg:hover
               ${initialAnimate ? "animate-running" : ""}
             `}
         >

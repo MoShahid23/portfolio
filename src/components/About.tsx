@@ -16,6 +16,7 @@ function About() {
     return (
         <section
             id="About"
+            data-aos="fade-up"
             className="relative px-4 py-20 text-foreground overflow-hidden"
         >
             <Card heading="About" className="place-self-center">

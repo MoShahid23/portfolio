@@ -58,8 +58,8 @@
     }
 
     .slick-dots li {
-        width: 10px !important;
-        height: 15px !important;
+        width: 7px !important;
+        height: 10px !important;
     }
     .slick-dots li.slick-active div {
         @apply bg-primary;

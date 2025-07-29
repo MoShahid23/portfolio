@@ -7,6 +7,7 @@ import projects from "../data/projects";
 function Projects() {
     return (
         <section
+            data-aos="fade-up"
             id="Projects"
             className="relative px-4 py-20 text-foreground overflow-hidden"
         >
@@ -25,6 +26,7 @@ function Projects() {
             {/* creates a card for each project in the assets/projects */}
             {projects.map((project) => (
                 <ProjectCard
+                    data-aos="fade-up"
                     key={project.name} project={project}
                 ></ProjectCard>
             ))}

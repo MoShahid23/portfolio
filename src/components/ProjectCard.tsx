@@ -4,13 +4,13 @@ import type { Project } from "../types/Project";
 
 type ProjectCardProps = {
     project: Project;
-};
+} & React.HTMLAttributes<HTMLDivElement>;
 
 interface ArrowProps {
     onClick?: () => void;
 }
 
-function ProjectCard({ project }: ProjectCardProps) {
+function ProjectCard({ project, ...rest }: ProjectCardProps) {
     const NextArrow = ({ onClick }: ArrowProps) => (
         <div
             onClick={onClick}
@@ -49,7 +49,7 @@ function ProjectCard({ project }: ProjectCardProps) {
     };
 
     return (
-        <div className="w-9/10 place-self-center bg-accent mt-20">
+        <div {...rest} className="w-9/10 place-self-center bg-accent mt-20">
             <div className="flex flex-row gap-4 w-fit p-2 border-foreground border-t-2 border-l-4">
                 <div className="content-center">
                     <div

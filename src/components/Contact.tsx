@@ -9,7 +9,7 @@ function Contact() {
             id="Contact"
             className="relative px-4 py-20 text-foreground overflow-hidden"
             >
-            <Card heading="Contact" background="primary" className="place-self-center">
+            <Card heading="Contact" background="primary" className="place-self-center animate-fade-in">
             <p className="mb-4">Thank you! Your message has been sent. I’ll get back to you shortly.</p>
             <button
                 className="p-2 bg-accent hover:bg-primary transition-colors"
@@ -23,6 +23,7 @@ function Contact() {
     }
     return (
         <section
+            data-aos="fade-up"
             id="Contact"
             className="relative px-4 py-20 text-foreground overflow-hidden"
         >

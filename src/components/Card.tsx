@@ -7,7 +7,7 @@ type CardProps = {
 
 function Card({ heading, background = "primary", className = "", children}: CardProps) {
   return (
-    <div className={`${className} w-9/10`}>
+    <div className={`${className} w-9/10 mx-auto`}>
       {/* Heading with top/left border */}
       {heading && (
         <div className={`mb-1 px-5 w-fit relative border-l-4 border-t-2 border-foreground bg-${background}`}>

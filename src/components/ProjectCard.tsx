@@ -49,7 +49,7 @@ function ProjectCard({ project, ...rest }: ProjectCardProps) {
     };
 
     return (
-        <div {...rest} className="w-9/10 mx-auto place-self-center bg-accent mt-20">
+        <div {...rest} className="w-9/10 mx-auto place-self-center bg-accent-50/70 mt-20">
             <div className="flex flex-row gap-4 w-fit p-2 border-foreground border-t-2 border-l-4">
                 <div className="content-center">
                     <div

@@ -6,6 +6,7 @@
     --color-secondary: #171717f7;
     --color-foreground: #f5f5f4;
     --color-accent: #00020e;
+     --color-accent-50: #0e122b;
     --font-custom: "Outfit", Sans-serif;
 
     --animate-scroll-bg: scroll-bg 20s linear infinite;
